@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -newer ../ -exec cp {} ../ \;
+find . -name "*.html" -exec sh -c 'if [ ! -e "../$(basename {})" ] || [ {} -nt "../$(basename {})" ]; then cp {} ../; fi' \;
