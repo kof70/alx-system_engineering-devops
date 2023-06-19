@@ -1,2 +1,3 @@
 #!/bin/bash
-chown vincent _hello;chgrp staff _hello
+sh: 1: :wq: not found
+chgrp staff _hello
