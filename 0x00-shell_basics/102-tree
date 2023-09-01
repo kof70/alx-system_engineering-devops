@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -maxdepth 1 -print0 | LC_COLLATE=C sort -z | tr '\0' ',' | sed -e 's/,$/\n/'
