@@ -1,2 +1,2 @@
 #!/bin/bash
-(chmod 775 _hello chown vincent:staff _hello)
+chown vincent:staff --no-dereference _hello
